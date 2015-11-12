@@ -1,0 +1,37 @@
+{
+  "name": "job-dispatch/server",
+  "description": "",
+  "license": "MIT",
+  "keywords": [
+  ],
+  "version": "0.1",
+  "authors": [
+    {
+      "name": "Jenner",
+      "email": "hypxm@qq.com",
+      "homepage" : "http://www.huyanping.cn"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "ext-posix": "*",
+    "jenner/simple_fork": "1.0",
+    "monolog/monolog": "1.17.1"
+  },
+  "require-dev": {
+    "guzzle/guzzle": "v3.9.3",
+    "ext-redis": "*"
+  },
+  "suggest": {
+    "ext-libevent": ">=0.1.0",
+    "ext-event": "~1.0",
+    "ext-libev": "*",
+    "guzzle/guzzle": "v3.9.3",
+    "ext-redis": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dispatch\\Server": "src/"
+    }
+  }
+}
